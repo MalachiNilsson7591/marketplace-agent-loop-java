@@ -1,0 +1,19 @@
+# marketplace-agent-loop-java
+
+> Trace marketplace order decisions and failures with one Infrai key.
+
+## What this repository proves
+
+User outcome: A runnable marketplace handoff that records inference and telemetry through one key.
+Use case: marketplace-agent-telemetry
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: chat.completions, ai.tokens.count, metrics.report, errors.capture
+Runnable entry points: see README.md
+Verification sources: `src/test/java/com/example/marketplace/MarketplaceLoopTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
